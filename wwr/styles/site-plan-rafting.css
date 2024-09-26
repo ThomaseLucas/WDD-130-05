@@ -9,7 +9,7 @@ Fonts are separated by a & */
   --primary-color: #7B90AB   ;
   --secondary-color: #EBBF6E ;
   --accent1-color: #40382A;
-  --accent2-color: #968C78;
+  --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "IM Fell French Canon";
