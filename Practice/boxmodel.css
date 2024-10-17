@@ -1,0 +1,36 @@
+body {
+    background-color: lightgreen;
+}
+
+#wrapper {
+    width: 75%;
+    margin: 0 auto;
+    background-color: lightsalmon;
+    padding: 30px;
+}
+
+.qbox1, .qbox2, .qbox3 {
+    font-family:  'Arial Narrow Bold', sans-serif;
+    border-radius: 50px;
+    background: whitesmoke;
+}
+.qbox1 {
+    margin: 20px;
+    border: 25px solid black;
+    padding: 10px 30px;
+    width: 500px;
+}
+
+.qbox2 {
+    margin: 20px;
+    border: 25px solid lime;
+    padding: 10px 30px;
+    width: 500px;  
+}
+
+.qbox3 {
+    margin: 20px;
+    border: 25px solid pink;
+    padding: 10px 30px;
+    width: 500px;  
+}
