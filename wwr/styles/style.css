@@ -1,14 +1,32 @@
 body {
     background-color: white;
+    font-family: Tahoma, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.home-title{
+    font-family: Impact, "Haettenschweiler";
+    font-size: 600%;
+    margin-top: 10px;
+
 }
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img{
     width: 100%;
 }
 
+.home-grid{
+    font-size: 1.5em;
+}
+#logo_link{
+    padding-top: 5px;
+}
 .logo{
     width: 150px;
     height: auto;
@@ -18,17 +36,24 @@ header {
 }
 
 nav a:hover{
-    background-color: #40382A;
+    background-color: #7B90AB;
 }
 .book{
     color: white;
     background-color: #40382A;
     text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
 }
 
 .join{
-    background-color: #7B90AB;
+    background-color: #EBBF6E;
     text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 10px;
 }
 
 .book:hover{
@@ -36,7 +61,7 @@ nav a:hover{
 }
 
 .join:hover {
-    background-color: #EBBF6E;
+    background-color: #7B90AB;
 }
 
 #background{
@@ -45,10 +70,21 @@ nav a:hover{
 
 .msg{
     background-color: #EBBF6E;
+    font-size: 2em;
+    padding: 35px;
+}   
+
+.msg p{
+    padding-bottom: 15px;
+}
+
+.msg h2{
+    font-family: Impact, Haettenschweiler,
 }
 
 footer{
     background-color: #EBBF6E;
+    padding: 25px 50px;
 }
 
 #content {
@@ -60,6 +96,7 @@ nav a {
     text-align: center;
     color: #EBBF6E;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1 {
@@ -68,6 +105,7 @@ nav a {
 
 #hero-msg h4 {
     text-align: center;
+    font-size: 3em;
 }
 
 main section {
@@ -92,4 +130,38 @@ footer p{
 
 footer p a:hover{
     text-decoration: underline;
+}
+
+.social img{
+    padding-top: 15px;
+}
+
+header nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+}
+
+.rivers-card{
+    margin: 200px 0;
+}
+
+.camping-card{
+    margin: 200px 0;
+}
+
+.rapids-card{
+    margin: 200px 0;
+}
+
+.card-img {
+    border: solid #40382A 10px;
+}
+
+main section img{
+    box-sizing: border-box;
+}
+
+.mountains{
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
