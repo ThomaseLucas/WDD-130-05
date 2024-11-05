@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #1a1a1a; /* Dark background for Halloween vibe */
+    color: #fff; /* White text color for contrast */
+  }
+  
+  /* Wrapper for page content */
+  #wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    font-size: 1.1em;
+    color: #ffa500; /* Orange for Halloween theme */
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 2.5em;
+    color: #ffa500;
+    text-shadow: 2px 2px #333; /* Adds a spooky shadow effect */
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    color: #ff6347; /* Lighter orange for section headings */
+  }
+  
+  /* Image Styling */
+  main img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Centers the image horizontally */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a shadow for depth */
+  }
+  /* Sections Styling */
+  section {
+    background-color: #292929;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #ffa500;
+    font-size: 1.2em;
+  }
