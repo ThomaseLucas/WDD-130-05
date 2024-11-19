@@ -1,24 +1,161 @@
+#about-me img {
+    float: right;
+    margin: 0 0 10px 10px;
+    width: 350px;
+    height: auto;
+    border-radius: 200px;
+}
+
+#about-me h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#about-me p {
+    text-align: justify;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    border-radius: 90px;
+}
+
 body {
-    
+    background-color: #f5f5dc;
+    justify-content: center;
 }
 
 #container {
-    max-width: 650px;
-    height: 350px;
+    max-width: auto;
+    height: auto;
     border: black solid 2px;
     justify-content: center;
     padding: 20px;
-
+    border-radius: 60px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 header {
-    background-color: darkred;
+    background-color: #ff6347;
     color: black;
-    width: 100%;
+    max-width: auto;
     height: 100px;
     margin: 0 auto;
     padding: 10px;
     text-align: center;
+    border-radius: 60px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
 
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    height: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+nav a:hover {
+    color: brown;
+}
+
+nav div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+nav img {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+nav img:hover {
+    transform: scale(1.1);
+}
+
+nav #wireframe {
+    grid-column: 1;
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
     
+}
+
+nav #about-me-page {
+    grid-column: 2;
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+nav #white-water {
+    grid-column: 3;
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+nav #white-water-plan {
+    grid-column: 4;
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+nav #practice-position {
+    grid-column: 5;
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+nav #practice-cherry {
+    grid-column: 1;
+    grid-row: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+nav #practice-halloween {
+    grid-column: 2;
+    grid-row: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+nav #personal-website {
+    grid-column: 3;
+    grid-row: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+nav #personal-siteplan {
+    grid-column: 4;
+    grid-row: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+nav #idk-yet {
+    grid-column: 5;
+    grid-row: 2;
+    align-items: center;
+    justify-content: center;
 }
