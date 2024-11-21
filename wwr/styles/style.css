@@ -268,4 +268,62 @@ main section img{
         margin-top: 25px;
     }
 }
-            
+
+.registration-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    max-width: 1600px;
+}
+
+.registration-card {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: left;
+}
+
+#register-title {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+    padding-bottom: 500px;
+    z-index: 3;
+    color: #EBBF6E;
+}
+
+#group_river {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 80%;
+    margin-right: 250px;
+}
+
+form {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#calendar {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width: 75%;
+}
+
+#time-select {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    text-align: center;
+    color: #EBBF6E;
+}
+
+#time-available {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    text-align: center;
+}

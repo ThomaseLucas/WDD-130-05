@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whitewater Rafting Vacations | Wild Water Rafting | Home</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <a id="logo_link" href="index.html">
+          <img
+            class="logo"
+            src="images/wild_water.png"
+            alt="Wild Water Rafting"
+          />
+        </a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="#">Page 2</a>
+          <a href="site-plan-rafting.html">Site Plan</a>
+          <a href="contactus.html">Contact Us</a>
+        </nav>
+      </header>
+      <div id="hero">
+        <div id="hero-box">
+          <img
+            id="hero-img"
+            src="images/hero.png"
+            alt="People enjoying Rafting"
+          />
+        </div>
+        <section id="hero-msg">
+          <h1 class="home-title">Have An Adventure</h1>
+          <h4>Make Memories with Wild Water</h4>
+        </section>
+      </div>
+      <main class="registration-grid">
+        <h2 id="register-title">Register Below!</h2>
+        <img
+          id="group_river"
+          src="images/teens_by_river.jpg"
+          alt="group by river"
+        />
+        <section class="registration-card">
+          <form action="register.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <input type="submit" value="Register" />
+          </form>
+        </section>
+        <img id="calendar" src="images/calendar.jpg" alt="calendar" />
+        <h1 id="time-select">Select a Time</h1>
+        <div id="time-available">
+          <label for="time">Available Times:</label>
+          <select id="time" name="time">
+            <option value="12pm">12:00 PM</option>
+            <option value="1pm">1:00 PM</option>
+            <option value="2pm">2:00 PM</option>
+            <option value="3pm">3:00 PM</option>
+            <option value="4pm">4:00 PM</option>
+          </select>
+        </div>
+      </main>
+      <footer>
+        <p>Wild Water &copy; 2024 - Thomas Lucas</p>
+        <p><a href="site-plan-rafting.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social">
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon" />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon" />
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon" />
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
