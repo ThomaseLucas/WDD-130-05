@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/main.css" />
+
+    <style>
+      .button {
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #272f6f;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+
+      .button:hover {
+        background-color: #303a86;
+      }
+
+      .button:active {
+        background-color: #3e4aa3;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -27,7 +52,7 @@
         <label for="book">Book:</label>
         <input type="text" id="book" name="book" required /><br /><br />
 
-        <input type="submit" value="Submit" />
+        <button class="button">Click Me</button>
       </form>
     </main>
     <footer>
