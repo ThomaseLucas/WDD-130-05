@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/popular.css" />
   </head>
   <body>
     <header>
@@ -16,7 +17,7 @@
         ><strong>Get your book!</strong></a
       >
     </header>
-    <main>
+    <main id="popular-main">
       <div id="hero-img-popular">
         <img
           src="images/person_reading.jpg"
@@ -32,39 +33,56 @@
         </p>
       </div>
 
-      <div id="list-of-genres">
-        <ul>
-          <li>
-            Romance: "Pride and Prejudice" by Jane Austen - A timeless classic
-            that explores the themes of love, social standing, and personal
-            growth.
-          </li>
-          <li>
-            Mystery: "The Girl with the Dragon Tattoo" by Stieg Larsson - A
-            gripping thriller that delves into a complex investigation filled
-            with twists and turns.
-          </li>
-          <li>
-            Fantasy: "Harry Potter and the Sorcerer's Stone" by J.K. Rowling -
-            An enchanting tale of magic, friendship, and adventure that has
-            captivated readers of all ages
-          </li>
-          <li>
-            Science Fiction: "Dune" by Frank Herbert - A visionary epic that
-            explores themes of politics, religion, and the human condition in a
-            distant future.
-          </li>
-          <li>
-            Horror: "The Shining" by Stephen King - A chilling story of
-            isolation and supernatural terror that will keep you on the edge of
-            your seat.
-          </li>
-          <li>
-            Non-Fiction: "Sapiens: A Brief History of Humankind" by Yuval Noah
-            Harari - An insightful exploration of the history and impact of Homo
-            sapiens on the world.
-          </li>
-        </ul>
+      <div class="romance-popup" onclick="togglePopup('popupRomance')">
+        Romance
+        <span class="popuptext" id="popupRomance">
+          "Pride and Prejudice" by Jane Austen - A timeless classic that
+          explores the themes of love, social standing, and personal
+          growth.</span
+        >
+      </div>
+
+      <div class="mystery-popup" onclick="togglePopup('popupMystery')">
+        Mystery
+        <span class="popuptext" id="popupMystery"
+          >"The Girl with the Dragon Tattoo" by Stieg Larsson - A gripping
+          thriller that delves into a complex investigation filled with twists
+          and turns.</span
+        >
+      </div>
+
+      <div class="fantasy-popup" onclick="togglePopup('popupFantasy')">
+        Fantasy
+        <span class="popuptext" id="popupFantasy"
+          >"Harry Potter and the Sorcerer's Stone" by J.K. Rowling - An
+          enchanting tale of magic, friendship, and adventure that has
+          captivated readers of all ages</span
+        >
+      </div>
+
+      <div class="science-popup" onclick="togglePopup('popupScience')">
+        Science Fiction
+        <span class="popuptext" id="popupScience"
+          >"Dune" by Frank Herbert - A visionary epic that explores themes of
+          politics, religion, and the human condition in a distant future.</span
+        >
+      </div>
+
+      <div class="horror-popup" onclick="togglePopup('popupHorror')">
+        Horror
+        <span class="popuptext" id="popupHorror"
+          >"The Shining" by Stephen King - A chilling story of isolation and
+          supernatural terror that will keep you on the edge of your seat.</span
+        >
+      </div>
+
+      <div class="non-popup" onclick="togglePopup('popupNon')">
+        Non-Fiction
+        <span class="popuptext" id="popupNon"
+          >"Sapiens: A Brief History of Humankind" by Yuval Noah Harari - An
+          insightful exploration of the history and impact of Homo sapiens on
+          the world.</span
+        >
       </div>
 
       <div id="popular-bottom-text">
@@ -80,10 +98,17 @@
       </div>
     </main>
     <footer>
-      <a href="#">Contact us</a>
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">Goodreads </a>
+      <a id="contactus" href="#">Contact us</a>
+      <a id="facebook" href="#">Facebook</a>
+      <a id="instagram" href="#">Instagram</a>
+      <a id="goodreads" href="#">Goodreads </a>
     </footer>
+    <script>
+      // When the user clicks on <div>, open the popup
+      function togglePopup(popupid) {
+        var popup = document.getElementById(popupid);
+        popup.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>

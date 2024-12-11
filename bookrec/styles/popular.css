@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --primary-color: #272f6f;
+    --secondary-color: #f6e5c4;
+    --accent1-color: #A42212;
+    --accent2-color: #e6cf98;
+
+    --heading-font: "Rye", system-ui;
+    --paragraph-font: "Lora", monospace;
+
+    --headline-color-on-white: #272f6f;
+    --headline-color-on-color: white;
+
+    --paragraph-color-on-white: #272f6f;
+    --paragraph-color-on-color: #f6e5c4;
+    --paragraph-background-color: #e6cf98;
+
+    --nav-link-color: #A42212;
+    --nav-background-color: #f6e5c4;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #A42212;
+}
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--paragraph-font);
+    background: linear-gradient(to top, #c95748, #e6cf98);
+    color: var(--primary-color);
+}
+
+/* Header */
+
+/* Main Section */
+#popular-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for popups */
+    grid-template-rows: auto auto auto; /* Adjust rows dynamically */
+    gap: 20px; /* Spacing between items */
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Hero Image */
+#hero-img-popular img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Genre Popups */
+.romance-popup, .mystery-popup, .fantasy-popup, .science-popup, .horror-popup, .non-popup {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.romance-popup:hover, .mystery-popup:hover, .fantasy-popup:hover, 
+.science-popup:hover, .horror-popup:hover, .non-popup:hover {
+    background-color: var(--paragraph-background-color);
+}
+
+/* Popup Text */
+.popuptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+.popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popuptext.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Bottom Text */
+#popular-bottom-text {
+    grid-column: span 3;
+    padding: 20px;
+    font-size: 18px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+
+/* Side Image */
+#side-image-popular img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--nav-hover-link-color);
+}
