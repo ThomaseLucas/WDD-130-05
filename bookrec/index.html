@@ -10,7 +10,7 @@
     <header>
       <a id="nav-home" href="index.html"><strong>Home</strong></a>
       <a id="nav-genres" href="genres.html"><strong>Genres</strong></a>
-      <h1>hi</h1>
+      <h1></h1>
       <a id="nav-popular" href="popular.html"><strong>Popular Books</strong></a>
       <a id="nav-book-order" href="book-order.html"
         ><strong>Get your book!</strong></a
@@ -22,45 +22,57 @@
         <p id="welcome-msg">Welcome to Book-Rec!</p>
       </div>
 
-      <div id="home-page-identifer">
-        <p>Home</p>
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="genres.html">Genres</a>
+          <a href="popular.html">Popular Genres</a>
+          <a href="book-order.html">Place Your Order</a>
+        </div>
       </div>
 
-      <img
-        id="leftmost-img"
-        src="images/manbookshelf.jpg"
-        alt="picture of man with bookshelf"
-      />
-      <div id="left-text">
-        <p>
-          Are you ever curious why people enjoy reading so much and you don't?
-          Do you want to get back into reading but don't know where to start?
-        </p>
+      <div id="button-container">
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()">Home</span>
       </div>
+      <div id="paragraph-1">
+        <img
+          id="leftmost-img"
+          src="images/harry_potter.jpg"
+          alt="picture of man with bookshelf"
+        />
+        <div id="left-text">
+          <p>
+            Are you ever curious why people enjoy reading so much and you don't?
+            Do you want to get back into reading but don't know where to start?
+          </p>
+        </div>
 
-      <div id="left-undertext">
-        <p>
-          Well, you're in luck! Bookrec is here to help you find the perfect
-          book for you. We have a wide variety of genres to choose from.
-        </p>
+        <div id="left-undertext">
+          <p>
+            Well, you're in luck! Bookrec is here to help you find the perfect
+            book for you. We have a wide variety of genres to choose from.
+          </p>
+        </div>
       </div>
 
       <div id="right-home-image-bottom">
         <img src="" alt="" style="width: 30%; height: auto" />
       </div>
 
-      <div id="right-text-home">
-        <p>
-          There are many genres such as romance, mystery, fantasy. This website
-          will help you find the perfect book for you.
-        </p>
-      </div>
-
-      <div id="right-undertext-home">
-        <p>
-          Don't worry if you don't know what you like. We have a section for
-          you!
-        </p>
+      <div id="paragraph-2">
+        <div id="right-text-home">
+          <p>
+            There are many genres such as romance, mystery, fantasy. This
+            website will help you find the perfect book for you. Don't worry if you don't know what you like. We have a section for
+            you!
+          </p>
       </div>
     </main>
     <footer>
@@ -69,5 +81,16 @@
       <a id="instagram" href="#">Instagram</a>
       <a id="goodreads" href="#">Goodreads </a>
     </footer>
+    <script>
+      /* Open when someone clicks on the span element */
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
   </body>
 </html>

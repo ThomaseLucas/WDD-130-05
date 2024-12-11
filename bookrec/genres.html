@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Genres</title>
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/genres.css" />
   </head>
   <body>
     <header>
@@ -16,7 +17,7 @@
         ><strong>Get your book!</strong></a
       >
     </header>
-    <main>
+    <main id="genres-main">
       <div id="top-left-text-genres">
         <p>
           A genre is a category of literature, art, or music characterized by a
@@ -30,89 +31,93 @@
 
       <div id="middle-left-text-genres">
         <p>
-          f you are worried about having to read a whole book to understand what
-          genere you like, don't worry, we can either summarize the book for you
-          or give you a preview of the book. We also will give detailed
+          If you are worried about having to read a whole book to understand
+          what genere you like, don't worry, we can either summarize the book
+          for you or give you a preview of the book. We also will give detailed
           descriptions of what each genre is about and what it presents to the
           reader.
         </p>
       </div>
 
       <div id="hero-img-genres">
-        <img
-          src="images/relax.jpg"
-          alt="girl-reading"
-          style="width: 25%; height: auto"
-        />
+        <img src="images/bookshelf.jpg" alt="girl-reading" />
       </div>
       <div id="genre-definitions">
-        <ul>
-          <li>
-            <strong>Romance:</strong> A love story focusing on emotional
-            journeys, exploring passion, relationships, and often ending with
-            hope and fulfillment.
-          </li>
-          <li>
-            <strong>Mystery:</strong> A suspenseful tale about solving crimes or
-            puzzles, filled with twists and themes of justice and morality.
-          </li>
-          <li>
-            <strong>Fantasy:</strong> A magical adventure set in imaginative
-            worlds, featuring mythical creatures, epic quests, and battles
-            between good and evil.
-          </li>
-          <li>
-            <strong>Science Fiction:</strong> Stories exploring futuristic
-            technology, space, and its societal impact, delving into innovation
-            and ethical dilemmas.
-          </li>
-          <li>
-            <strong>Horror:</strong> Tales of fear and the supernatural, evoking
-            dread with haunted settings, monstrous beings, and psychological
-            terror.
-          </li>
-          <li>
-            <strong>Non-Fiction:</strong> True stories and factual works aiming
-            to educate, inform, and inspire through real events and knowledge.
-          </li>
-        </ul>
-      </div>
-      <div id="genre-icons">
-        <ul>
-          <li>
-            <img src="images/romance.jpg" alt="romance" />
-            <p>Romance</p>
-          </li>
-          <li>
-            <img src="images/mystery.jpg" alt="mystery" />
-            <p>Mystery</p>
-          </li>
-          <li>
-            <img src="images/fantasy.jpg" alt="fantasy" />
-            <p>Fantasy</p>
-          </li>
-          <li>
-            <img src="images/science-fiction.jpg" alt="science-fiction" />
-            <p>Science Fiction</p>
-          </li>
-          <li>
-            <img src="images/horror.jpg" alt="horror" />
-            <p>Horror</p>
-          </li>
-          <li>
-            <img src="images/non-fiction.jpg" alt="non-fiction" />
-            <p>Non-Fiction</p>
-          </li>
-        </ul>
+        <button class="accordion">Romance</button>
+        <div class="panel">
+          <p>
+            A love story focusing on emotional journeys, exploring passion,
+            relationships, and often ending with hope and fulfillment.
+          </p>
+        </div>
+
+        <button class="accordion">Mystery</button>
+        <div class="panel">
+          <p>
+            A suspenseful tale about solving crimes or puzzles, filled with
+            twists and themes of justice and morality.
+          </p>
+        </div>
+
+        <button class="accordion">Fantasy</button>
+        <div class="panel">
+          <p>
+            A magical adventure set in imaginative worlds, featuring mythical
+            creatures, epic quests, and battles between good and evil.
+          </p>
+        </div>
+
+        <button class="accordion">Science Fiction</button>
+        <div class="panel">
+          <p>
+            Stories exploring futuristic technology, space, and its societal
+            impact, delving into innovation and ethical dilemmas.
+          </p>
+        </div>
+
+        <button class="accordion">Horror</button>
+        <div class="panel">
+          <p>
+            Tales of fear and the supernatural, evoking dread with haunted
+            settings, monstrous beings, and psychological terror.
+          </p>
+        </div>
+
+        <button class="accordion">Non-Fiction</button>
+        <div class="panel">
+          <p>
+            True stories and factual works aiming to educate, inform, and
+            inspire through real events and knowledge.
+          </p>
+        </div>
       </div>
     </main>
     <footer>
-      <ul>
-        <li><a href="#">Contact us</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Goodreads </a></li>
-      </ul>
+      <a id="contactus" href="#">Contact us</a>
+      <a id="facebook" href="#">Facebook</a>
+      <a id="instagram" href="#">Instagram</a>
+      <a id="goodreads" href="#">Goodreads </a>
     </footer>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+          this.classList.toggle("active");
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
