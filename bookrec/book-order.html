@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/book-order.css" />
 
     <style>
       .button {
@@ -13,11 +14,13 @@
         text-align: center;
         cursor: pointer;
         outline: none;
-        color: #fff;
+        color: #f6e5c4;
         background-color: #272f6f;
         border: none;
         border-radius: 15px;
-        box-shadow: 0 9px #999;
+        box-shadow: 0 5px #999;
+        align-items: center;
+        justify-content: center;
       }
 
       .button:hover {
@@ -41,7 +44,7 @@
         ><strong>Get your book!</strong></a
       >
     </header>
-    <main>
+    <main id="book-order-main">
       <form action="" id="book-order">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required /><br /><br />

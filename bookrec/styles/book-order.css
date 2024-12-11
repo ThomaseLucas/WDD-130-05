@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rye&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #272f6f   ;
+  --secondary-color: #f6e5c4 ;
+  --accent1-color: #A42212;
+  --accent2-color: #e6cf98;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Rye", system-ui;
+--paragraph-font: "Lora", monospace;
+
+/* Headline Colors */
+--headline-color-on-white: #272f6f; /* headlines on a white background - matches primary color */
+--headline-color-on-color: white; /* headlines on a colored background */
+
+/* Updated Colors */
+--paragraph-color-on-white: #272f6f; /* paragraph text on a white background - matches primary color */
+--paragraph-color-on-color: #f6e5c4; /* paragraph text on a colored background - matches secondary color */
+--paragraph-background-color: #e6cf98; /* background for paragraph sections - matches accent2 color */
+
+--nav-link-color: #A42212; /* matches accent1 color */
+--nav-background-color: #f6e5c4; /* matches secondary color */
+--nav-hover-link-color: white; /* hover link color - stands out on accent1 background */
+--nav-hover-background-color: #A42212; /* hover background color - matches accent1 color */
+}
+
+#book-order-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+
+}
+
+#book-order {
+    font-size: 50px;
+}
+
+#name {
+    font-size: 30px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px #272f6f;
+}
+
+#address {
+    font-size: 30px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px #272f6f;
+}
+
+#book {
+    font-size: 30px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px #272f6f;
+}
